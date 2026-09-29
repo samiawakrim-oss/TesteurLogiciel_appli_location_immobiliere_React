@@ -1,0 +1,24 @@
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+.rating span {
+  color: #e3e3e3;
+
+  font-size: 25px;
+}
+
+.rating span.active {
+  color: #ff6060;
+}
+
+@media (max-width: 768px) {
+  .rating {
+    gap: 3px;
+  }
+
+  .rating span {
+    font-size: 18px;
+  }
+}

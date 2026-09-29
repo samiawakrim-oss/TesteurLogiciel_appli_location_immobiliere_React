@@ -1,0 +1,148 @@
+.collapse {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.collapse-button {
+  width: 100%;
+  min-height: 52px;
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #ff6060;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 143%;
+
+  text-align: left;
+}
+
+.collapse-title {
+  line-height: 143%;
+}
+
+/* Chevron */
+.collapse-arrow {
+  position: relative;
+
+  width: 20px;
+  height: 12px;
+
+  flex-shrink: 0;
+
+  transition: transform 0.3s ease;
+}
+
+/* Les deux branches du chevron */
+.collapse-arrow::before,
+.collapse-arrow::after {
+  content: '';
+
+  position: absolute;
+  top: 5px;
+
+  width: 12px;
+  height: 3px;
+
+  background-color: white;
+
+  border-radius: 2px;
+}
+
+/* Branche gauche */
+.collapse-arrow::before {
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+/* Branche droite */
+.collapse-arrow::after {
+  right: 0;
+  transform: rotate(45deg);
+}
+
+/*
+  FERMÉ :
+      /\
+     /  \
+
+  OUVERT :
+      \/
+     \  /
+*/
+.collapse.open .collapse-arrow {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  padding: 25px 20px;
+
+  background-color: #f6f6f6;
+  color: #000;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 143%;
+}
+
+.collapse-content p {
+  margin: 0;
+}
+
+.collapse-content ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.collapse-content li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .collapse {
+    margin-bottom: 20px;
+  }
+
+  .collapse-button {
+    min-height: 30px;
+    padding: 0 12px;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+    line-height: 143%;
+  }
+
+  .collapse-arrow {
+    width: 16px;
+    height: 10px;
+  }
+
+  .collapse-arrow::before,
+  .collapse-arrow::after {
+    width: 10px;
+    height: 2px;
+  }
+
+  .collapse-content {
+    padding: 15px 12px;
+
+    font-size: 12px;
+    line-height: 143%;
+  }
+}

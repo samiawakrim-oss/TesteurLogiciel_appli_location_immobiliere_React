@@ -1,0 +1,113 @@
+.housing {
+  width: 100%;
+}
+
+.housing-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  margin-top: 30px;
+}
+
+.housing-description {
+  min-width: 0;
+}
+
+.housing-description h1 {
+  margin: 0 0 10px;
+
+  color: #ff6060;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 143%;
+}
+
+.housing-description > p {
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 143%;
+}
+
+.housing-host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 20px;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host p {
+  max-width: 150px;
+  margin: 0;
+
+  color: #ff6060;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 143%;
+
+  text-align: right;
+}
+
+.host img {
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.housing-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .housing-info {
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 20px;
+  }
+
+  .housing-description h1 {
+    font-size: 24px;
+    line-height: 143%;
+  }
+
+  .housing-description > p {
+    font-size: 14px;
+  }
+
+  .housing-host {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .housing-details {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+    margin-top: 20px;
+  }
+}

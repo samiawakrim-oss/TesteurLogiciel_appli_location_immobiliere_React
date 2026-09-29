@@ -1,0 +1,40 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.tags span {
+  min-width: 115px;
+
+  padding: 5px 15px;
+
+  border-radius: 10px;
+
+  background-color: #ff6060;
+  color: #fff;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 143%;
+
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .tags {
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .tags span {
+    min-width: auto;
+    padding: 4px 12px;
+
+    font-size: 10px;
+    border-radius: 5px;
+  }
+}

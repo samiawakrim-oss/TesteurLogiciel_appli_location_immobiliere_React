@@ -1,14 +1,24 @@
-# Kasa API
+# Kasa – Application de location immobilière
 
-## Prerequisites
-You need Docker to launch the app API or you can use service installing nodejs on your system and running in backend forlder the following commandes: `npm install` then `npm start`
+Projet réalisé dans le cadre de la formation OpenClassrooms Testeur Logiciel.
 
-## Launch Project
+## Technologies utilisées
 
-With Docker run command
+- React
+- Vite
+- React Router
+- JavaScript
+- CSS
+- Vitest
+- React Testing Library
+- Node.js / Express pour l'API fournie
 
-`docker-compose up -d`
+## Installation
 
-To stop project run
-`docker-compose down`
+### Backend
 
+Depuis le dossier backend :
+
+```bash
+npm install
+npm start

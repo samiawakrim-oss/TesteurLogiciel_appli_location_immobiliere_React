@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  max-width: 1240px;
+
+  margin: 45px auto 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 210px;
+  height: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 57px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 143%;
+}
+
+.nav a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: auto; 
+    margin: 20px 20px 27px 20px;
+    padding: 0;
+  }
+
+  .logo {
+    width: 145px;
+  }
+
+  .nav {
+    gap: 20px;
+    font-size: 12px;
+    line-height: 143%;
+    text-transform: uppercase;
+  }
+}

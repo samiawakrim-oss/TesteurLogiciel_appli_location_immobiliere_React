@@ -31,3 +31,4 @@ coverage/
 # Variables d'environnement locales
 .env
 
+repomix-output.xml
